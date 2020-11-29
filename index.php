@@ -1,9 +1,11 @@
 <?php
 include 'lib.php';
-//$servername="127.0.0.1";
-//$username="liyiwei";
-//$password="li130214";
-$conn=new mysqli(SERVERNAME,USERNAME,PASSWORD,DBNAME);
+header("Access-Control-Allow-Origin: *");
+$servername="127.0.0.1";
+$username="liyiwei";
+$password="li130214";
+$conn=new mysqli($servername,$username,$password,'homework');
+//$conn=new mysqli(SERVERNAME,USERNAME,PASSWORD,DBNAME);
 if ($conn->connect_error){
     $msg="数据库连接错误";
 }//echo "mysql连接成功"."<br>";
@@ -13,8 +15,17 @@ $name=$_GET['name'];
 $qq=$_GET['subject'];
 $tel=$_GET['tel'];
 $context=$_GET['context'];
-if (isset($name)&&isset($qq)&&isset($tel)&&isset($context) &&strlen($tel)==11){
-    $sql="INSERT INTO `register` (`name`, `qq`, `tel`, `context`) VALUES ('".$name."', '".$qq."', '".$tel."', '".$context."')";
+$msg="第一步";
+
+$sql2="SELECT * FROM `warmth` WHERE `name`='".$name."'";
+$res=$conn->query($sql2);
+if($res->num_rows>0){
+    $msg ="已报名";
+    die($msg);
+}
+
+if (isset($name)&&isset($qq)&&isset($tel)&&strlen($tel)==11){
+    $sql="INSERT INTO `warmth` (`name`, `subject`, `tel`, `context`) VALUES ('".$name."', '".$qq."', '".$tel."', '".$context."')";
     if ($conn->query($sql)===TRUE){
         $msg='报名成功';
         //echo "insert successfully";
@@ -27,6 +38,10 @@ if (isset($name)&&isset($qq)&&isset($tel)&&isset($context) &&strlen($tel)==11){
 }else{
     $msg='请填写完整信息';
 }
+//$name="李奕玮";
+//while($row = $res->fetch_assoc()) {
+//    echo $row["name"]."<br>".  $row["subject"] ."<br>". $row["tel"] ."<br>". $row["context"]."<br>";
+//}
 $conn->close();
 echo $msg;
 ?>
