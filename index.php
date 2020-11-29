@@ -10,11 +10,11 @@ if ($conn->connect_error){
 
 
 $name=$_GET['name'];
-$subject=$_GET['subject'];
+$qq=$_GET['subject'];
 $tel=$_GET['tel'];
 $context=$_GET['context'];
-if (isset($name)&&isset($subject)&&isset($tel)&&isset($context) &&strlen($tel)==11){
-    $sql="INSERT INTO `register` (`name`, `subject`, `tel`, `context`) VALUES ('".$name."', '".$subject."', '".$tel."', '".$context."')";
+if (isset($name)&&isset($qq)&&isset($tel)&&isset($context) &&strlen($tel)==11){
+    $sql="INSERT INTO `register` (`name`, `qq`, `tel`, `context`) VALUES ('".$name."', '".$qq."', '".$tel."', '".$context."')";
     if ($conn->query($sql)===TRUE){
         $msg='报名成功';
         //echo "insert successfully";
