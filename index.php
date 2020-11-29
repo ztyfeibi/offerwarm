@@ -1,6 +1,6 @@
 <?php
 include 'lib.php';
-header("Access-Control-Allow-Origin: *");
+//header("Access-Control-Allow-Origin: *");
 //$servername="127.0.0.1";
 //$username="liyiwei";
 //$password="li130214";
