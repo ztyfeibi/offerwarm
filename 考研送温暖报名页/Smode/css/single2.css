@@ -1,0 +1,280 @@
+@media screen and (min-width: 768px) {
+  body {
+    padding: 0 100px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  body {
+    padding: 0 200px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  body {
+    padding: 0 400px;
+  }
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.img-responsive {
+  width: 100%;
+  height: auto;
+}
+
+@font-face {
+  font-family: '汉仪铸字小精灵W';
+  src: url('../font/HYZhuZiXiaoJingLingW.ttf');
+  src: url('../font/HYZhuZiXiaoJingLingW.eot?#font-spider') format('embedded-opentype'), url('../font/HYZhuZiXiaoJingLingW.woff') format('woff'), url('../font/HYZhuZiXiaoJingLingW.ttf') format('truetype'), url('../font/HYZhuZiXiaoJingLingW.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HS';
+  src: url('../font/SourceHanSansCN-Regular.ttf');
+  src: url('../font/SourceHanSansCN-Regular.eot?#font-spider') format('embedded-opentype'), url('../font/SourceHanSansCN-Regular.woff') format('woff'), url('../font/SourceHanSansCN-Regular.ttf') format('truetype'), url('../font/SourceHanSansCN-Regular.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+#success {
+  z-index: 10;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+  display: none;
+}
+
+.container {
+  min-height: 100%;
+  position: relative;
+  padding: 4% 4%;
+  background-image: url(../../comimg/bg.png);
+  background-size: 375px 812px;
+  transition: filter .1s linear;
+  box-sizing: border-box;
+}
+
+.container .register p {
+  font-size: 1.3rem;
+  margin-left: 15vmin;
+  color: #333;
+  font-family: '汉仪铸字小精灵W';
+}
+
+.container .register .info {
+  position: relative;
+}
+
+.container .register .info input {
+  position: absolute;
+  width: 70%;
+  right: 5%;
+  top: 50%;
+  height: 1.7rem;
+  transform: translateY(-50%);
+  outline: none;
+  border: 0.7vmin solid #f3c776;
+  border-radius: 10vmin;
+  padding-left: 1%;
+}
+
+.container .register .div-sex {
+  position: relative;
+  margin-top: 2%;
+  display: none;
+}
+
+.container .register .div-sex .radio {
+  position: absolute;
+  width: 60%;
+  right: 11%;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+}
+
+.container .register .div-sex .lab-sex {
+  display: inline-block;
+  height: 9vmin;
+  width: 9vmin;
+  background-color: #fff;
+  border-radius: 50%;
+  line-height: 9vmin;
+  text-align: center;
+  font-family: "汉仪铸字小精灵W";
+}
+
+.container .register .group {
+  text-align: center;
+  margin-top: 3%;
+  font-size: 1.3rem;
+  height: 1.7rem;
+  line-height: 1.7rem;
+}
+
+.container .register .group span {
+  font-family: "汉仪铸字小精灵W";
+}
+
+.container .register .group input {
+  border: 0.7vmin solid #87b0cb;
+  border-radius: 10vmin;
+  height: 100%;
+  outline: none;
+  box-sizing: border-box;
+  vertical-align: top;
+  display: inline-block;
+  width: 45%;
+  padding-left: 1%;
+}
+
+.container .register .btn {
+  display: block;
+  margin: 0 auto;
+  margin-top: 5vmax;
+  border: none;
+  outline: none;
+  width: 35vmin;
+  height: 10vmin;
+  border-radius: 30vmin;
+  background-color: grey;
+  color: #fff;
+  font-size: 1.3rem;
+  user-select: none;
+  font-family: '汉仪铸字小精灵W';
+}
+
+.container .register .btn:active {
+  filter: brightness(85%);
+}
+
+.keyword {
+  margin-top: 15.38%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.info-icon {
+  width: 22.57%;
+}
+
+.info-choose {
+  width: 60.2%;
+  margin-left: 10.72%;
+}
+
+.keyword label {
+  background-color: #fff;
+  color: #666;
+  border-radius: 15px;
+  padding: 2px 8px;
+  font-size: 18px;
+  font-family: 'HS';
+}
+
+.container .register .keyword p {
+  font-size: 12px;
+  margin-left: 0;
+  color: #666;
+  margin-top: 10px;
+  font-family: 'HS';
+}
+
+.info-num {
+  text-align: right;
+  opacity: 0;
+  transition: opacity .2s;
+}
+
+.info-num img {
+  width: 81.12%;
+}
+
+.button {
+  position: absolute;
+  top: 90.625vh;
+  width: 34.8148148vw;
+  height: 8.98148148vw;
+  border-radius: 3.5vw;
+  background-color: grey;
+  left: 50%;
+  transform: translateX(-50%);
+  border: none;
+}
+
+.button p {
+  text-align: center;
+  font-family: '汉仪铸字小精灵W';
+  line-height: 8.98148148vw;
+  color: white;
+  font-size: 5vw;
+}
+
+#phone-check {
+  position: absolute;
+  bottom: -1vw;
+  font-size: 85%;
+  color: #e85637;
+  margin-left: 21.185vw;
+  font-family: 'HS';
+}
+
+#name-check {
+  position: absolute;
+  bottom: -1vw;
+  font-size: 85%;
+  color: #e85637;
+  margin-left: 21.185vw;
+  font-family: 'HS';
+}
+
+#qq-check {
+  position: absolute;
+  bottom: -1vw;
+  font-size: 85%;
+  color: #e85637;
+  margin-left: 21.185vw;
+  font-family: 'HS';
+}
+
+.volunteer {
+  position: relative;
+  top: -25px;
+}
+
+.introduce_self textarea {
+  position: absolute;
+  width: 70%;
+  right: 5%;
+  top: 39%;
+  height: 5.3rem;
+  transform: translateY(-50%);
+  outline: none;
+  border: 0.7vmin solid #f3c776;
+  border-radius: 3vmin;
+  padding-left: 1%;
+}
+.bc img{
+  width: 100%;
+  position: relative;
+  top: 15px;
+}

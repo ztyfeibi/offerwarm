@@ -1,0 +1,301 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  box-sizing: border-box;
+  background-image: url(../../comimg/bg.png);
+  background-size: 375px 812px;
+  background-attachment: fixed;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+a {
+  outline: none;
+}
+
+@font-face {
+  font-family: 'webfont';
+  font-display: swap;
+  src: url('//at.alicdn.com/t/webfont_ldp2bm5f0ws.eot');
+  /* IE9*/
+  src: url('//at.alicdn.com/t/webfont_ldp2bm5f0ws.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('//at.alicdn.com/t/webfont_ldp2bm5f0ws.woff2') format('woff2'), url('//at.alicdn.com/t/webfont_ldp2bm5f0ws.woff') format('woff'), /* chrome、firefox */
+  url('//at.alicdn.com/t/webfont_ldp2bm5f0ws.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url('//at.alicdn.com/t/webfont_ldp2bm5f0ws.svg#思源黑体-普通') format('svg');
+  /* iOS 4.1- */
+}
+
+.web-font {
+  font-family: "webfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+  padding: 2.5% 2.96% 0;
+  position: relative;
+}
+
+.img-responsive {
+  width: 100%;
+  height: auto;
+}
+
+.img-responsive-logo {
+  width: 40%;
+  height: auto;
+  margin: 6px 0 0 6px;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 43.5%;
+}
+
+.describe {
+  width: 20%;
+  display: none;
+}
+
+.content {
+  margin: 6.7% auto 0;
+  margin-top: 8.51%;
+  width: 79.51%;
+  font-size: 0;
+}
+
+.one {
+  width: 80.42%;
+  margin: 0 auto;
+}
+
+.two {
+  width: 45.81%;
+  display: inline-block;
+  top: 30px;
+  position: relative;
+  left: 7px;
+}
+
+.three {
+  width: 54.12%;
+  display: inline-block;
+  position: relative;
+  top: 10px;
+}
+
+.content-div2 {
+  position: relative;
+  left: 9.08%;
+}
+
+.five {
+  width: 13.09%;
+  display: inline-block;
+}
+
+.four {
+  width: 41.04%;
+  display: inline-block;
+  margin-left: 2.95%;
+  position: relative;
+  top: 45px;
+}
+
+.content-div3 {
+  margin-top: 50px;
+  position: relative;
+  left: 9.08%;
+}
+
+.six {
+  width: 32.43%;
+  display: inline-block;
+}
+
+.seven {
+  width: 26.64%;
+  display: inline-block;
+  margin-left: 16.86%;
+}
+
+.eight {
+  width: 13.09%;
+  margin: 0 auto;
+}
+
+.tip {
+  width: 15%;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 20.51%;
+  animation: ud 1.5s .15s linear infinite;
+}
+
+@keyframes ud {
+  0%,
+  100%,
+  20%,
+  50%,
+  80% {
+    transition-timing-function: cubic-bezier(0.215, .61, .355, 1);
+    /*贝塞尔曲线 ： X1 Y1 X2 Y2*/
+    transform: translate3d(0, 0, 0);
+    /*设置只在Z轴上移动*/
+  }
+  40%,
+  43% {
+    transition-timing-function: cubic-bezier(0.755, 0.50, 0.855, 0.060);
+    transform: translate3d(0, -25px, 0);
+  }
+  70% {
+    transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    transform: translate3d(0, -12px, 0);
+  }
+  90% {
+    transform: translate3d(0, -4px, 0);
+  }
+}
+
+#show {
+  position: absolute;
+  box-sizing: border-box;
+  max-height: 70vmax;
+  width: 80%;
+  background-color: #fff;
+  border-radius: 10px;
+  border: 3px solid #f3c776;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  padding: 2vh 4vw;
+  display: none;
+  z-index: 99;
+}
+
+#show a {
+  display: inline-block;
+  width: 20%;
+  position: absolute;
+  top: 1vh;
+  left: 4vw;
+}
+
+.show-title {
+  display: block;
+  margin: 0 auto;
+}
+
+.show-txt {
+  font-size: 14px;
+  line-height: 2;
+  font-weight: 500;
+  margin-top: 5vh;
+  max-height: 85%;
+  overflow: scroll;
+  padding: 0 1vw;
+}
+
+.tip div:last-child {
+  width: 75%;
+  margin: 0 auto;
+}
+
+
+/* 模式选择页 */
+
+.page2-container {
+  position: relative;
+  min-height: 100%;
+  box-sizing: border-box;
+}
+
+.page2-logo {
+  position: absolute;
+  width: 30%;
+}
+
+.single1 {
+  width: 36.5740740740740vw;
+  margin: 0 auto;
+  margin-top: 1vmax;
+  position: relative;
+}
+
+.single1 a {
+  width: 100%;
+  display: block;
+}
+
+#single2-img {
+  position: absolute;
+  width: 30%;
+  top: 0;
+  right: -2vw;
+  display: none;
+}
+
+#single2 img {
+  width: 100%;
+  height: 100%;
+}
+
+.couple1 {
+  width: 51.7592592592vw;
+  margin: 0 auto;
+  position: relative;
+}
+
+.couple1 a {
+  display: block;
+}
+
+#couple2-img {
+  position: absolute;
+  top: -3vh;
+  left: 50%;
+  width: 20%;
+  transform: translateX(-50%);
+  display: none;
+}
+
+.random1 {
+  margin: 0 auto;
+  width: 48.98148148148vw;
+  position: relative;
+}
+
+.random1 a {
+  display: block;
+}
+
+#random2-img {
+  position: absolute;
+  top: -3vh;
+  left: 50%;
+  width: 15%;
+  transform: translateX(-50%);
+  display: none;
+}
+
+.b-margin {
+  margin-top: 5vmax;
+}

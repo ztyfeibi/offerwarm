@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui" />
+  <meta name="screen-orientation" content="portrait">
+  <meta name="full-screen" content="yes">
+  <meta name="x5-orientation" content="portrait" />
+  <meta name="x5-fullscreen" content="true" />
+  <title>单人报名</title>
+  <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="./css/single2.css">
+</head>
+
+<body>
+  <div id="success"><img src="../comimg/success.png" alt="success" width="90%"></div>
+  <div class="container" id="phone">
+    <a href="javascript:void(0);"><img src="../comimg/btnclose.png" width="8%" onclick="document.location='../home/index.html'"></a>
+    <div class="register">
+      <br>
+      <br>
+      <form action="" id="singleForm" class="volunteer">
+        <div class="div-name info">
+          <label for="name"><img src="../comimg/name.png" width="11%" style="margin-left: 15px;"></label>
+          <input type="text" id="name" name="name">
+          <p id="name-check"></p>
+        </div>
+        <div class="div-sex ">
+          <label><img src="../comimg/sex.png" alt="" width="11%"></label>
+          <div class="div-sex-option radio" onclick="changeOne()">
+            <label for="op-male" class="lab-sex" id="male">男</label>
+            <label for="op-female" class="lab-sex" id="female">女</label>
+            <label for="op-secret" class="lab-sex" id="secret">密</label>
+          </div>
+          <input type="radio" name="sex" value="1" id="op-male" style="display: none;">
+          <input type="radio" name="sex" value="0" id="op-female" style="display: none;">
+          <input type="radio" name="sex" value="2" id="op-secret" style="display: none;">
+        </div>
+        <div class="div-qq info">
+          <label for="qq"><img src="../comimg/QQ.png" width="11%" style="margin-left: 15px;"></label>
+          <input type="tel" id="qq" name="subject">
+          <p id="qq-check"></p>
+        </div>
+        <div class="div-phone info">
+          <label for="tel"><img src="../comimg/telephone.png" width="11%" style="margin-left: 15px;"></label>
+          <input type="tel" id="tel" name="tel" maxlength="11">
+          <p id="phone-check"></p>
+        </div>
+        <!-- <div class="keyword">
+          <div class="info-icon"><img src="./img/icon-我的信息.png" alt="" class="img-responsive"></div>
+          <div class="info-choose">
+            <div>
+              <div class="info-num" id="tag1-num"><img src="./img/学习群号.png" alt="" class="img-responsive"></div>
+              <label for="study" class="initial" id="tag1" onclick="choseTag()">学习</label>
+              <p>课内学习、课外阅读、考证等</p>
+            </div>
+            <div>
+              <div class="info-num" id="tag2-num"><img src="./img/兴趣群号.png" alt="" class="img-responsive"></div>
+              <label for="hobby" class="initial" id="tag2" onclick="choseTag()">兴趣</label>
+              <p>乐器、厨艺、跳舞、唱歌、书画、健身等</p>
+            </div>
+            <input type="radio" name="type" id="study" value="学习" style="display: none;">
+            <input type="radio" name="type" id="hobby" value="兴趣" style="display: none;">
+          </div>
+        </div> -->
+        <div class="introduce_self">
+          <label for="tel"><img src="../comimg/introduce_self.png" width="13%" style="margin-left: 15px;"></label>
+          <textarea id="context" name="context" type="introduce"></textarea>
+        </div>
+        <div class="bc">
+          <img src="../comimg/bed.png" alt="">
+      </div>
+        <input type="button" value="点击报名" class="btn" id="touch">
+      </form>
+      <script src="single2.js"></script>
+</body>
+</html>

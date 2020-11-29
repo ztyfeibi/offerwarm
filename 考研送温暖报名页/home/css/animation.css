@@ -1,0 +1,198 @@
+/***     从右边弹出来                       ***/
+
+@-webkit-keyframes bounceInRight {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(3000px);
+        transform: translateX(3000px);
+    }
+    60% {
+        opacity: 1;
+        -webkit-transform: translateX(-25px);
+        transform: translateX(-25px);
+    }
+    75% {
+        -webkit-transform: translateX(10px);
+        transform: translateX(10px);
+    }
+    90% {
+        -webkit-transform: translateX(-5px);
+        transform: translateX(-5px);
+    }
+    100% {
+        -webkit-transform: translateX(0px);
+        transform: translateX(0px);
+    }
+}
+
+@keyframes bounceInRight {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(3000px);
+        transform: translateX(3000px);
+    }
+    60% {
+        opacity: 1;
+        -webkit-transform: translateX(-25px);
+        transform: translateX(-25px);
+    }
+    75% {
+        -webkit-transform: translateX(10px);
+        transform: translateX(10px);
+    }
+    90% {
+        -webkit-transform: translateX(-5px);
+        transform: translateX(-5px);
+    }
+    100% {
+        -webkit-transform: translateX(0px);
+        transform: translateX(0px);
+    }
+}
+
+
+/***         右边回去                      ***/
+
+@-webkit-keyframes bounceOutRight {
+    20% {
+        opacity: 1;
+        -webkit-transform: translateX(-20px);
+        transform: translateX(-20px);
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: translateX(1000px);
+        transform: translateX(1000px);
+    }
+}
+
+@keyframes bounceOutRight {
+    20% {
+        opacity: 1;
+        -webkit-transform: translateX(-20px);
+        transform: translateX(-20px);
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: translateX(1000px);
+        transform: translateX(1000px);
+    }
+}
+
+
+/*从左边弹出来*/
+
+@-webkit-keyframes bounceInLeft {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(-600px);
+        transform: translateX(-600px);
+    }
+    60% {
+        opacity: 1;
+        -webkit-transform: translateX(25px);
+        transform: translateX(25px);
+    }
+    75% {
+        opacity: 1;
+        -webkit-transform: translateX(-10px);
+        transform: translateX(-10px);
+    }
+    90% {
+        opacity: 1;
+        -webkit-transform: translateX(5px);
+        transform: translateX(5px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateX(0px);
+        transform: translateX(0px);
+    }
+}
+
+@keyframes bounceInLeft {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(-600px);
+        transform: translateX(-600px);
+    }
+    60% {
+        opacity: 1;
+        -webkit-transform: translateX(25px);
+        transform: translateX(25px);
+    }
+    75% {
+        opacity: 1;
+        -webkit-transform: translateX(-10px);
+        transform: translateX(-10px);
+    }
+    90% {
+        opacity: 1;
+        -webkit-transform: translateX(5px);
+        transform: translateX(5px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateX(0px);
+        transform: translateX(0px);
+    }
+}
+
+
+/*从左边弹出来回去*/
+
+@-webkit-keyframes bounceOutLeft {
+    20% {
+        opacity: 1;
+        -webkit-transform: translateX(20px);
+        -ms-transform: translateX(20px);
+        transform: translateX(20px);
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: translateX(-600px);
+        -ms-transform: translateX(-600px);
+        transform: translateX(-600px);
+    }
+}
+
+@keyframes bounceOutLeft {
+    20% {
+        opacity: 1;
+        -webkit-transform: translateX(20px);
+        -ms-transform: translateX(20px);
+        transform: translateX(20px);
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: translateX(-600px);
+        -ms-transform: translateX(-600px);
+        transform: translateX(-600px);
+    }
+}
+
+
+/******************************/
+
+.bounceInRight {
+    animation: bounceInRight 1.2s;
+    animation-iteration-count: 1;
+}
+
+.bounceOutRight {
+    animation: bounceOutRight 1s;
+    animation-iteration-count: 1;
+}
+
+.bounceInLeft {
+    animation: bounceInLeft 1.2s;
+    animation-iteration-count: 1;
+}
+
+.bounceOutLeft {
+    animation: bounceOutLeft 0.6s;
+    animation-iteration-count: 1;
+}
+
+
+/*mode界面动画结束*/

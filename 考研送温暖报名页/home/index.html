@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui" />
+  <meta name="screen-orientation" content="portrait">
+  <meta name="full-screen" content="yes">
+  <meta name="x5-orientation" content="portrait" />
+  <meta name="x5-fullscreen" content="true" />
+  <!-- fullpage.js -->
+  <link rel="stylesheet" href="./css/fullpage.css">
+  <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+  <script src="./js/fullpage.js"></script>
+  <script src="./js/single2.js"></script>
+  <!-- CSS引入 -->
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="./css/animation.css">
+  <link rel="stylesheet" href="../comimg/animate.min.css">
+  <link rel="stylesheet" href="css/single2.css">
+  <title>考研送温暖</title>
+  <script>
+    function browserRedirect() {
+      var sUserAgent = navigator.userAgent.toLowerCase();
+
+      var bIsIphone = sUserAgent.match(/iphone os/i) == 'iphone os';
+      var bIsMidp = sUserAgent.match(/midp/i) == 'midp';
+      var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == 'rv:1.2.3.4';
+      var bIsUc = sUserAgent.match(/ucweb/i) == 'web';
+      var bIsCE = sUserAgent.match(/windows ce/i) == 'windows ce';
+      var bIsWM = sUserAgent.match(/windows mobile/i) == 'windows mobile';
+      var bIsAndroid = sUserAgent.match(/android/i) == 'android';  
+      if (bIsIphone || bIsMidp || bIsUc7 || bIsUc || bIsCE || bIsWM || bIsAndroid) {    
+        document.getElementById("pc-code").style.display = 'none';
+        console.log("您的浏览设备为：phone");   
+      } else {
+        document.getElementById("pc-code").style.display = 'flex';
+        console.log("您的浏览设备为：pc");   
+        document.getElementById("dowebok").style.display = 'none';
+      }  
+    }
+  </script>
+  <style>
+    #pc-code {
+      position: fixed;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+      background: white;
+      color: #fff;
+    }
+    
+    #pc-code .pc-img {
+      max-width: 300px;
+      opacity: 0;
+      animation: mymove 0.5s forwards;
+      animation-delay: 0.5s;
+    }
+    
+    #pc-code .pc-text {
+      margin-top: 3vh;
+      opacity: 0;
+      animation: mymove 0.5s forwards;
+      animation-delay: 0.5s;
+    }
+    
+    .pc-text>h4 {
+      font-size: 2.5vh;
+      color: #475c7c;
+    }
+    
+    @keyframes mymove {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+    
+    @-webkit-keyframes mymove
+    /*Safari and Chrome*/
+    
+    {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="pc-code">
+    <div class="pc-img">
+      <img src="./img/1588841636.png" onclick="return false" width="100%">
+    </div>
+    <div class="pc-text" id="pc-text">
+      <h4>请使用手机扫描二维码进行访问~</h4>
+    </div>
+    <script>
+      browserRedirect();
+    </script>
+  </div>  
+  <div id="dowebok">
+    <div class="page1-container section" id="page1">
+      <div id="show">
+        <a href="javascript:void(0);"><img src="../comimg/btnclose.png" alt="button-close" width="50%" id="btn-hide"></a>
+        <img src="img/exp.png" alt="show-title" width="30%" class="show-title">
+        <div class="show-txt">
+          <p class="web-font">1.在本次“晚安睡务局”活动中，单人&双人的打卡模式随意pick。
+          </p>
+          <p class="web-font">2.单人模式随心所欲，双人模式可邀请自己的好友，也可以根据自己的关键词在活动群中寻找知己或交给三姨妈匹配，仅一次自行组队机会。
+          </p>
+          <p class="web-font">3.活动开始后，按照自己的计划每天坚持并通过群作业打卡，坚持七天即可获得参与奖一份。
+          </p>
+          <p class="web-font">4.除了参与奖之外，还可参与人气奖评选，将七天的收获变成图片、视频或一段有趣的文字，在三姨妈公众号上分区评选，人气最高的10位参与者将获得人气奖一份。
+          </p>
+        </div>
+      </div>
+      <div class="container">
+        <div class="top">
+          <div class="logo"><img src="./img/logo1.png" alt="" class="img-responsive-logo"></div>
+          <div class="describe" id="btn-right"><img src="./img/button-活动说明.png" alt="" class="img-responsive"></div>
+        </div>
+        <div class="content">
+          <div class="one"><img src="./img/1.png" alt="" class="img-responsive"></div>
+          <div class="content-div1">
+            <div class="two"><img src="./img/2.png" alt="" class="img-responsive"></div>
+            <div class="three"><img src="./img/3.png" alt="" class="img-responsive"></div>
+          </div>
+          <div class="content-div2">
+            <div class="five"><img src="./img/5.png" alt="" class="img-responsive"></div>
+            <div class="four"><img src="./img/4.png" alt="" class="img-responsive"></div>
+          </div>
+          <div class="content-div3">
+            <div class="six"><img src="./img/6.png" alt="" class="img-responsive"></div>
+            <div class="seven"><img src="./img/7.png" alt="" class="img-responsive"></div>
+          </div>
+          <div class="content-div4">
+            <div class="eight"><img src="./img/8.png" alt="" class="img-responsive"></div>
+          </div>
+        </div>
+        <div class="tip">
+          <div><img src="./img/下拉报名.png" alt="" class="img-responsive"></div>
+          <div><img src="./img/插件-下拉提示.png" alt="" class="img-responsive"></div>
+        </div>
+
+      </div>
+    </div>
+    <div class="page2-container section" id="page2">
+      <div id="success"><img src="../comimg/success.png" alt="success" width="90%"></div>
+  <div class="container" id="phone">
+    <a href="javascript:void(0);"><img src="../comimg/btnclose.png" width="8%" onclick="document.location='../home/index.html'"></a>
+    <div class="register">
+      <br>
+      <br>
+      <form action="" id="singleForm" class="volunteer">
+        <div class="div-name info">
+          <label for="name"><img src="../comimg/name.png" width="11%" style="margin-left: 15px;"></label>
+          <input type="text" id="name" name="name">
+          <p id="name-check"></p>
+        </div>
+        <div class="div-sex ">
+          <label><img src="../comimg/sex.png" alt="" width="11%"></label>
+          <div class="div-sex-option radio" onclick="changeOne()">
+            <label for="op-male" class="lab-sex" id="male">男</label>
+            <label for="op-female" class="lab-sex" id="female">女</label>
+            <label for="op-secret" class="lab-sex" id="secret">密</label>
+          </div>
+          <input type="radio" name="sex" value="1" id="op-male" style="display: none;">
+          <input type="radio" name="sex" value="0" id="op-female" style="display: none;">
+          <input type="radio" name="sex" value="2" id="op-secret" style="display: none;">
+        </div>
+        <div class="div-qq info">
+          <label for="qq"><img src="../comimg/QQ.png" width="11%" style="margin-left: 15px;"></label>
+          <input type="tel" id="qq" name="subject">
+          <p id="qq-check"></p>
+        </div>
+        <div class="div-phone info">
+          <label for="tel"><img src="../comimg/telephone.png" width="11%" style="margin-left: 15px;"></label>
+          <input type="tel" id="tel" name="tel" maxlength="11">
+          <p id="phone-check"></p>
+        </div>
+        <!-- <div class="keyword">
+          <div class="info-icon"><img src="./img/icon-我的信息.png" alt="" class="img-responsive"></div>
+          <div class="info-choose">
+            <div>
+              <div class="info-num" id="tag1-num"><img src="./img/学习群号.png" alt="" class="img-responsive"></div>
+              <label for="study" class="initial" id="tag1" onclick="choseTag()">学习</label>
+              <p>课内学习、课外阅读、考证等</p>
+            </div>
+            <div>
+              <div class="info-num" id="tag2-num"><img src="./img/兴趣群号.png" alt="" class="img-responsive"></div>
+              <label for="hobby" class="initial" id="tag2" onclick="choseTag()">兴趣</label>
+              <p>乐器、厨艺、跳舞、唱歌、书画、健身等</p>
+            </div>
+            <input type="radio" name="type" id="study" value="学习" style="display: none;">
+            <input type="radio" name="type" id="hobby" value="兴趣" style="display: none;">
+          </div>
+        </div> -->
+        <div class="introduce_self">
+          <label for="tel"><img src="../comimg/introduce_self.png" width="13%" style="margin-left: 15px;"></label>
+          <textarea id="context" name="context" type="introduce"></textarea>
+        </div>
+        <div class="bc">
+          <img src="../comimg/bed.png" alt="">
+      </div>
+        <input type="button" value="点击报名" class="btn" id="touch">
+      </form>
+      <script src="single2.js"></script>
+  </div>
+  <script src="./js/page0.js"></script>
+  <script src="./js/touch.js"></script>
+  <!--初始化fullpage-->
+  <script>
+    $(document).ready(function() {
+      $('#dowebok').fullpage({
+        verticalCentered: false,
+        css3: true,
+        normalScrollElements: '#show',
+        onLeave: function(index, nextIndex, direction) {
+          var single = $("#single");
+          var couple = $("#couple");
+          var random = $("#random");
+          var logo1 = $("#page1Logo");
+          var logo2 = $("#page2Logo");
+          if (direction == 'down') {
+            single.addClass("bounceInRight");
+            couple.addClass("bounceInLeft");
+            random.addClass("bounceInRight");
+            single.removeClass("bounceOutRight");
+            couple.removeClass("bounceOutLeft");
+            random.removeClass("bounceOutRight");
+            logo1.fadeOut("fast");
+            logo2.fadeIn("slow");
+          } else if (direction == 'up') {
+            single.addClass("bounceOutRight");
+            couple.addClass("bounceOutLeft");
+            random.addClass("bounceOutRight");
+            single.removeClass("bounceInRight");
+            couple.removeClass("bounceInLeft");
+            random.removeClass("bounceInRight");
+            logo1.fadeIn("slow");
+            logo2.fadeOut("fast");
+          }
+        }
+      });
+      $('#to-page2').click(function() {
+        $.fn.fullpage.moveSectionDown();
+      });
+      $(window).resize(function() {
+        $.fn.fullpage.reBuild();
+      });
+
+    });
+  </script>
+  <script>
+    $(function() {
+      $(".one").addClass("animated bounceIn");
+    })
+  </script>
+</body>
+
+</html>
