@@ -48,7 +48,7 @@ if (isset($name)&&isset($qq)&&isset($tel)&&strlen($tel)==11){
 //while($row = $res->fetch_assoc()) {
 //    echo $row["name"]."<br>".  $row["subject"] ."<br>". $row["tel"] ."<br>". $row["context"]."<br>";
 //}
-$res->close();
+//$res->close();
 $conn->close();
 echo $msg;
 ?>
